@@ -33,6 +33,6 @@
       "annotateForClosureCompiler": true,
       "strictMetadataEmit": true,
       "flatModuleOutFile": "integrity-theme.js",
-      "flatModuleId": "integrity-theme"
+      "flatModuleId": "@brickchain/integrity-theme"
   }
 }
