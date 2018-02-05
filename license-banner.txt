@@ -1,0 +1,6 @@
+/**
+ * @license Integrity Theme
+ * Copyright Brickchain Ltd.
+ * BSD-2 license
+ * https://github.com/Brickchain/integrity-theme
+ */
