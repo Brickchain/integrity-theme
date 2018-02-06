@@ -1,5 +1,6 @@
 @import "~@angular/material/theming";
 @import "color-generator.scss";
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600');
 
 $integrity-blue: mat-palette(mat-colors(#20afe2));
 $integrity-dark-blue: mat-palette(mat-colors(#004b97));
@@ -14,3 +15,5 @@ $integrity-accent: $integrity-blue;
 $integrity-warn: $integrity-red;
 
 $integrity-theme: mat-light-theme($integrity-primary, $integrity-accent, $integrity-warn);
+
+$integrity-font: mat-typography-config($font-family: "'Source Sans Pro', sans-serif");

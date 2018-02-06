@@ -5,6 +5,8 @@
 @include mat-core;
 
 .integrity-theme {
+
+  @include angular-material-typography($integrity-font);
   @include angular-material-theme($integrity-theme);
 
   $foreground-color: mat-contrast($integrity-grey, 200);
