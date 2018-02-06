@@ -39,4 +39,11 @@
   .mat-form-field-ripple {
     background-color: mat-color($integrity-green);
   }
+
+  integrity-qrcode {
+    svg {
+      width: 240px;
+      fill: mat-color($integrity-primary);
+    }
+  }
 }
