@@ -5,7 +5,6 @@
 @include mat-core;
 
 .integrity-theme {
-
   @include angular-material-typography($integrity-font);
   @include angular-material-theme($integrity-theme);
 
@@ -40,6 +39,10 @@
 
   .mat-form-field-ripple {
     background-color: mat-color($integrity-green);
+  }
+
+  .mat-dialog-actions {
+    justify-content: flex-end;
   }
 
   integrity-qrcode {
