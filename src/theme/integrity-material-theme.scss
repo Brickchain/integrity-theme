@@ -15,6 +15,18 @@
     background-color: $background-color;
   }
 
+  .mat-snack-bar-container {
+    &.error {
+      color: mat-color($integrity-warn, 100);
+      background: mat-color($integrity-warn);
+
+      .mat-simple-snackbar-action {
+        color: mat-color($integrity-warn, 50);
+        font-weight: bold;
+      }
+    }
+  }
+
   .mat-toolbar {
     color: $foreground-color;
     background-color: $background-color;
