@@ -2,10 +2,10 @@
 @import "integrity-theme.scss";
 
 // Be sure that you only ever include this mixin once!
-@include mat-core;
+@include mat-core($integrity-font);
 
 .integrity-theme {
-  @include angular-material-typography($integrity-font);
+
   @include angular-material-theme($integrity-theme);
 
   $foreground-color: mat-contrast($integrity-grey, 200);
@@ -55,6 +55,23 @@
 
   .mat-dialog-actions {
     justify-content: flex-end;
+  }
+
+  .mat-raised-button {
+    border-radius: 18px;
+    &:not([class*=mat-elevation-z]) {
+      box-shadow: none;
+    }
+  }
+
+  .mat-button {
+    border-radius: 18px;
+    .mat-button-wrapper {
+      color: mat-color($integrity-accent);
+    }
+    &[disabled] {
+      opacity: 0.38;
+    }
   }
 
   integrity-qrcode {
