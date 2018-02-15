@@ -5,7 +5,6 @@
 @include mat-core($integrity-font);
 
 .integrity-theme {
-
   @include angular-material-theme($integrity-theme);
 
   $foreground-color: mat-contrast($integrity-grey, 200);
@@ -13,6 +12,22 @@
 
   app-root {
     background-color: $background-color;
+  }
+
+  a:link {
+    color: mat-color($integrity-accent);
+  }
+
+  a:visited {
+    color: mat-color($integrity-accent);
+  }
+
+  a:hover {
+    color: mat-color($integrity-primary);
+  }
+
+  a:active {
+    color: mat-color($integrity-warn);
   }
 
   .mat-snack-bar-container {
@@ -59,6 +74,7 @@
 
   .mat-raised-button {
     border-radius: 18px;
+
     &:not([class*=mat-elevation-z]) {
       box-shadow: none;
     }
@@ -66,9 +82,11 @@
 
   .mat-button {
     border-radius: 18px;
+
     .mat-button-wrapper {
       color: mat-color($integrity-accent);
     }
+
     &[disabled] {
       opacity: 0.38;
     }

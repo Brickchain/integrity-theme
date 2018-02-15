@@ -1,6 +1,6 @@
 {
   "name": "@brickchain/integrity-theme",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Material theme library",
   "main": "./bundles/integrity-theme.umd.js",
   "module": "./modules/integrity-theme.es5.js",
