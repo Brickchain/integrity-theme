@@ -8,8 +8,11 @@ $integrity-yellow: mat-palette(mat-colors(#f9b026));
 $integrity-orange: mat-palette(mat-colors(#f76a0a));
 $integrity-red: mat-palette(mat-colors(#d42424));
 $integrity-green: mat-palette(mat-colors(#4bb04f));
+
 $integrity-grey: mat-palette(mat-colors(#9e9e9e));
-$integrity-light-grey: mat-palette(mat-colors(#f6f6f6));
+$integrity-grey62: mat-palette(mat-colors(#9e9e9e));
+$integrity-grey90: mat-palette(mat-colors(#e6e6e6));
+$integrity-grey96: mat-palette(mat-colors(#f6f6f6));
 
 $integrity-primary: $integrity-dark-blue;
 $integrity-accent: $integrity-blue;
@@ -30,6 +33,6 @@ $integrity-font: mat-typography-config(
   $body-2: mat-typography-level(14px, 24px, 600),
   $body-1: mat-typography-level(14px, 20px, 400),
   $caption: mat-typography-level(12px, 15px, 400),
-  $button: mat-typography-level(14px, 18px, 700),
+  $button: mat-typography-level(14px, 18px, 600),
   $input: mat-typography-level(14px, 1.428, 400)   /* Line-height must be unit-less fraction of the font-size */
 );

@@ -10,9 +10,7 @@
   $foreground-color: mat-contrast($integrity-grey, 200);
   $background-color: mat-color($integrity-grey, 200);
 
-  app-root {
-    background-color: $background-color;
-  }
+  background-color: $background-color;
 
   a:link {
     color: mat-color($integrity-accent);
@@ -64,6 +62,11 @@
     background-color: $background-color;
   }
 
+  .mat-sidenav-content {
+    background-color: #fff;
+    box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.1);
+  }
+
   .mat-form-field-ripple {
     background-color: mat-color($integrity-green);
   }
@@ -89,6 +92,19 @@
 
     &[disabled] {
       opacity: 0.38;
+    }
+  }
+
+  .mat-card {
+    background-color: mat-color($integrity-grey96);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1) !important;
+
+    .mat-card-header-text {
+      margin: 0;
+    }
+
+    .mat-card-actions {
+      text-align: right;
     }
   }
 
