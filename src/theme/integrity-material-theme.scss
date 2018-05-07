@@ -43,6 +43,23 @@
   .mat-toolbar {
     color: $foreground-color;
     background-color: $background-color;
+
+    * {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .mat-tab-header {
+    background-color: $background-color;
+
+    .mat-tab-label {
+      font-weight: 400;
+    }
+
+    .mat-tab-label-active {
+      color: mat-color($integrity-accent);
+    }
   }
 
   .mat-sidenav {
@@ -50,6 +67,10 @@
 
     .active {
       color: mat-color($integrity-accent);
+    }
+
+    .mat-icon {
+      margin-right: 10px;
     }
 
     .mat-nav-list {
@@ -92,30 +113,50 @@
     justify-content: flex-end;
   }
 
-  .mat-raised-button {
-    border-radius: 18px;
-
-    &:not([class*=mat-elevation-z]) {
-      box-shadow: none;
-    }
+  .mat-chip {
+    padding: 2px 12px !important;
+    border-radius: 3px !important;
   }
 
   .mat-icon {
-    margin-right: 10px;
     font-size: 20px !important;
     width: 20px !important;
     height: 20px !important;
+    line-height: 20px !important;
   }
 
-  .mat-button {
+  .mat-icon-button {
+    .mat-button-wrapper {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .mat-button, .mat-raised-button {
     border-radius: 18px;
 
     .mat-button-wrapper {
-      color: mat-color($integrity-accent);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .mat-icon {
+        margin-right: 4px;
+      }
     }
+  }
+
+  .mat-button, .mat-icon-button {
+    color: mat-color($integrity-grey40);
 
     &[disabled] {
       opacity: 0.38;
+    }
+  }
+
+  .mat-raised-button {
+    &:not([class*=mat-elevation-z]) {
+      box-shadow: none;
     }
   }
 
@@ -136,6 +177,14 @@
     border-top-color: rgba(0, 0, 0, 0.1);
   }
 
+  .mat-spacer {
+    flex: 1 1 auto;
+  }
+
+  .cdk-overlay-dark-backdrop {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
   .integrity-section-content {
     .mat-card {
       margin-bottom: 10px;
@@ -148,8 +197,7 @@
 
   integrity-qrcode {
     svg {
-      width: 240px;
-      fill: mat-color($integrity-primary);
+      width: 250px;
     }
   }
 }
