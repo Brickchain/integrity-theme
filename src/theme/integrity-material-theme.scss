@@ -52,7 +52,7 @@
   }
 
   .mat-tab-header {
-    background-color: $background-color;
+    background-color: mat-color($integrity-grey96);
 
     .mat-tab-label {
       font-weight: 400;
